@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #color {
+        color: blue; /*글자색*/
+      }
+      #line {
+        color: blue;
+        text-decoration: underline; /*밑줄*/
+      }
+      #weight {
+        color: blue;
+        text-decoration: underline;
+        font-weight: bold; /*굵게*/
+      }
+    </style>
+  </head>
+  <body>
+    <!--css 선택자 (중요- 자바스크립트에서도 사용)
+        1. 태그 선택자 : 태그명을 기준으로 설정 (가장 쉬움)
+        태그선택자 :
+        2. 전체 선택자 : body안 모든 태그를 의미 (*)   
+        3. 클래스 선택자 : 지정된 클래스 명을 가지고 있는 태그를 지정 (.+ 띄어쓰기)
+            (여러개의 클래스 이름을 줄 수 있다 ) , 공통적으로 속성을 줄수 있어서 코드가 짧을수 있음
+            그래서 가장많이 쓰이는 속성임 
+        4. 아이디 선택자: 지정된 아이디명을 가지고 있는 태그를 지정 (#)
+           (id는 중복되면 안된다) 태그보다 id가 우선순위를 갖는다
+    -->
+    <div>
+      <h1>CSS 기본 문법</h1>
+      <h2>아이디 선택자</h2>
+    </div>
+    <ul>
+      <!--아이템 항목의 글자색은 파란색, 두번째 아이템의 경우에는 밑줄, 세번째 아이템은 밑줄, 굵게-->
+      <li id="color">List item 1</li>
+      <li id="line">List item 2</li>
+      <li id="weight">List item 3</li>
+    </ul>
+  </body>
+</html>
